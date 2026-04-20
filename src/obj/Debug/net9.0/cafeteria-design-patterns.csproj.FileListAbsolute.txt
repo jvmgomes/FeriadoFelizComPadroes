@@ -1,0 +1,15 @@
+C:\Ws\projoo\8-Project-Pattern-Implementation\src\obj\Debug\net9.0\cafeteria-design-patterns.GeneratedMSBuildEditorConfig.editorconfig
+C:\Ws\projoo\8-Project-Pattern-Implementation\src\obj\Debug\net9.0\cafeteria-design-patterns.AssemblyInfoInputs.cache
+C:\Ws\projoo\8-Project-Pattern-Implementation\src\obj\Debug\net9.0\cafeteria-design-patterns.AssemblyInfo.cs
+C:\Ws\projoo\8-Project-Pattern-Implementation\src\obj\Debug\net9.0\cafeteria-design-patterns.csproj.CoreCompileInputs.cache
+C:\Ws\projoo\8-Project-Pattern-Implementation\src\obj\Debug\net9.0\cafeteria-design-patterns.sourcelink.json
+C:\Ws\projoo\8-Project-Pattern-Implementation\src\bin\Debug\net9.0\cafeteria-design-patterns.exe
+C:\Ws\projoo\8-Project-Pattern-Implementation\src\bin\Debug\net9.0\cafeteria-design-patterns.deps.json
+C:\Ws\projoo\8-Project-Pattern-Implementation\src\bin\Debug\net9.0\cafeteria-design-patterns.runtimeconfig.json
+C:\Ws\projoo\8-Project-Pattern-Implementation\src\bin\Debug\net9.0\cafeteria-design-patterns.dll
+C:\Ws\projoo\8-Project-Pattern-Implementation\src\bin\Debug\net9.0\cafeteria-design-patterns.pdb
+C:\Ws\projoo\8-Project-Pattern-Implementation\src\obj\Debug\net9.0\cafeteria-design-patterns.dll
+C:\Ws\projoo\8-Project-Pattern-Implementation\src\obj\Debug\net9.0\refint\cafeteria-design-patterns.dll
+C:\Ws\projoo\8-Project-Pattern-Implementation\src\obj\Debug\net9.0\cafeteria-design-patterns.pdb
+C:\Ws\projoo\8-Project-Pattern-Implementation\src\obj\Debug\net9.0\cafeteria-design-patterns.genruntimeconfig.cache
+C:\Ws\projoo\8-Project-Pattern-Implementation\src\obj\Debug\net9.0\ref\cafeteria-design-patterns.dll

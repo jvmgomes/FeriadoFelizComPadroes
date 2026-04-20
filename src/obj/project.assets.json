@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Ws\\projoo\\8-Project-Pattern-Implementation\\src\\src.csproj",
-      "projectName": "src",
-      "projectPath": "C:\\Ws\\projoo\\8-Project-Pattern-Implementation\\src\\src.csproj",
+      "projectUniqueName": "C:\\Ws\\projoo\\8-Project-Pattern-Implementation\\src\\cafeteria-design-patterns.csproj",
+      "projectName": "cafeteria-design-patterns",
+      "projectPath": "C:\\Ws\\projoo\\8-Project-Pattern-Implementation\\src\\cafeteria-design-patterns.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
       "outputPath": "C:\\Ws\\projoo\\8-Project-Pattern-Implementation\\src\\obj\\",
       "projectStyle": "PackageReference",
