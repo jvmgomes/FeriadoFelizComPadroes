@@ -1,4 +1,4 @@
-#☕ Cafeteria - Sistema com Design Patterns
+# ☕ Cafeteria - Sistema com Design Patterns
 ## 📌 Descrição
 
 Este projeto implementa uma simulação de um sistema de pedidos de uma cafeteria.
@@ -14,7 +14,7 @@ O principal objetivo é aplicar 8 padrões de projeto (GoF) em uma arquitetura �
  - Integrar com API externa
  - Utilizar múltiplos padrões de projeto
 ## 🧩 Padrões de Projeto Utilizados
-- **Factory**
+### **Factory**
 
 Responsável por criar diferentes tipos de notificações:
 
@@ -27,7 +27,8 @@ Utilizado para avisar eventos como:
  - pedido saiu para entrega
  - ingrediente indisponível
  - ingrediente reposto
- - **Singleton**
+
+### **Singleton**
 
 Gerencia configurações globais da cafeteria:
 
@@ -35,36 +36,36 @@ Gerencia configurações globais da cafeteria:
  - telefone
  - site
  - taxa base de entrega
- - **Facade**
+### **Facade**
 
 Simplifica a criação de pedidos:
 
  - combos prontos
  - escolha de ingredientes
  - interface única para o cliente
- - **Observer**
+### **Observer**
 
 Clientes cadastrados recebem notificações quando:
 
  - ingrediente acaba
  - ingrediente é reposto
  - novo ingrediente é adicionado
- - **Adapter**
+**Adapter**
 
 Integra o sistema com uma API externa de clientes, convertendo dados e filtrando clientes ativos (menos de 6 meses sem pedidos).
 
- - **Proxy**
+### **Proxy**
 
 Implementa cache para consultas ao “banco de dados”, evitando acessos repetidos e melhorando o desempenho.
 
- - **Strategy**
+### **Strategy**
 
 Define diferentes estratégias de cálculo de entrega:
 
  - retirada no local
  - entrega padrão
  - entrega expressa
-- **Decorator**
+### **Decorator**
 
 Permite adicionar ingredientes dinamicamente às bebidas:
 
