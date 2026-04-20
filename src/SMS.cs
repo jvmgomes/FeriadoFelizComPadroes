@@ -2,11 +2,11 @@ using System;
 
 namespace Cafeteria
 {
-    public class Whatsapp : INotification
+    public class SMS : INotification
     {
         public void send(string message)
         {
-            Console.WriteLine("Whatsapp: " + message);
+            Console.WriteLine("SMS: " + message);
         }
     }
 }

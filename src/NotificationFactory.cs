@@ -13,6 +13,12 @@ namespace Cafeteria
                 case "whatsapp": 
                     notification = new Whatsapp();
                     break;
+                case "email":
+                    notification = new Email();
+                    break;
+                case "sms":
+                    notification = new SMS();
+                    break;
                 default: 
                     throw new ArgumentException("Tipo de Notificação Inválido");
             }
