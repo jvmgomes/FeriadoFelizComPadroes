@@ -50,7 +50,7 @@ Clientes cadastrados recebem notificações quando:
  - ingrediente acaba
  - ingrediente é reposto
  - novo ingrediente é adicionado
-**Adapter**
+### **Adapter**
 
 Integra o sistema com uma API externa de clientes, convertendo dados e filtrando clientes ativos (menos de 6 meses sem pedidos).
 
