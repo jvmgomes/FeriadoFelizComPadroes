@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("cafeteria-design-patterns")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1171712643adee9ba36713f79e3c0b666132501d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ea7201138c284ab19ea4175d4279e6a23b968338")]
 [assembly: System.Reflection.AssemblyProductAttribute("cafeteria-design-patterns")]
 [assembly: System.Reflection.AssemblyTitleAttribute("cafeteria-design-patterns")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

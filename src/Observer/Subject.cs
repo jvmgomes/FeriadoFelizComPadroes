@@ -8,6 +8,7 @@ namespace Cafeteria
     {
         private List<IObserver> clients = new List<IObserver>();
 
+        public string LastIngredientAdded { get; set; }
         public void addObserver(IObserver client)
         {
             clients.Add(client);

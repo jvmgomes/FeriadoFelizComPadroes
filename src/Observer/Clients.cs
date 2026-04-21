@@ -22,13 +22,9 @@ namespace Cafeteria
         }
         public void Update (Subject s)
         {
-            GlobalConfiguration config = (GlobalConfiguration) s;
-            
             INotification notification = NotificationFactory.Create("whatsapp");
-            notification.send(clientName + "Novo ingrediente chegou: " + config.LastIngredientAdded);
+            notification.send(clientName + " Novo ingrediente chegou: " + s.LastIngredientAdded);
             Console.WriteLine("\n");
-        
-        
         }
     }
 }
