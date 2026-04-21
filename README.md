@@ -56,8 +56,11 @@ Integra o sistema com uma API externa de clientes, convertendo dados e filtrando
 
 ### **Proxy**
 
-Implementa cache para consultas ao “banco de dados”, evitando acessos repetidos e melhorando o desempenho.
+Implementa um Proxy de notificações com:
 
+ - controle de tentativas
+ - logs de envio
+ - bloqueio ao atingir limite
 ### **Strategy**
 
 Define diferentes estratégias de cálculo de entrega:
@@ -74,6 +77,7 @@ Permite adicionar ingredientes dinamicamente às bebidas:
  - chantili
  - calda
 ## 🏗️ Arquitetura do Sistema
+```
 Cliente
    ↓
 Facade (criação do pedido)
@@ -82,7 +86,7 @@ Decorator (adicionais)
    ↓
 Strategy (cálculo de entrega)
    ↓
-Proxy (cache)
+Proxy (protection/logging)
    ↓
 Adapter (API externa clientes)
    ↓
@@ -91,14 +95,15 @@ Factory (criação de notificações)
 Observer (clientes recebem aviso)
    ↓
 Singleton (configurações globais)
+```
 ## 🔄 Fluxo de Execução
  - Cliente realiza pedido
  - Facade cria bebida base
  - Decorator adiciona ingredientes
  - Strategy calcula frete
- - Proxy verifica cache
+ - Factory cria notificação   
+ - Proxy controla envio de notificações
  - Adapter obtém clientes ativos
- - Factory cria notificação
  - Observer notifica clientes
  - Singleton fornece configurações
 ## 📂 Estrutura do Projeto
@@ -112,13 +117,14 @@ Singleton (configurações globais)
 │  ├── Proxy/
 │  ├── Strategy/
 │  └── Decorator/
-└──README.md/
+└──README.md
  ```
 ## 🚀 Tecnologias
  - C#
  - .NET
  - Programação Orientada a Objetos
  - Design Patterns (GoF)
+ - Engenharia de Software Moderna (Marco Tulio Valente)
 ## 💡 Aprendizados
  - Aplicação prática de Design Patterns
  - Arquitetura modular
