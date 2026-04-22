@@ -7,7 +7,7 @@ namespace Cafeteria
             return 5.0;
         }
 
-        public string GetType()
+        public string GetDeliveryType()
         {
             return "Entrega padrão";
         }

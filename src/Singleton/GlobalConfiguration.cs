@@ -9,7 +9,7 @@ namespace Cafeteria
 /// </summary>
     public class GlobalConfiguration : Subject
     {
-        private static GlobalConfiguration instance;
+        private static GlobalConfiguration instance = null!;
 
         public string ApplicationName { get; private set; }
         public string SenderServer { get; private set; }

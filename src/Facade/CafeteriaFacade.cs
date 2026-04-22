@@ -8,8 +8,8 @@ namespace Cafeteria
 /// </summary>
     public class CafeteriaFacade
     {
-        private IDrinks currentDrink;
-        private IDelivery delivery;
+        private IDrinks? currentDrink;
+        private IDelivery? delivery;
 
         public void MakeSimpleCoffee()
         {
@@ -47,7 +47,7 @@ namespace Cafeteria
 
             double cost = delivery.Calculate();
 
-            Console.WriteLine(delivery.GetType());
+            Console.WriteLine(delivery.GetDeliveryType());
             Console.WriteLine("Custo entrega: " + cost);
         }
 
@@ -57,6 +57,12 @@ namespace Cafeteria
             {
                 Console.WriteLine("Você precisa escolher uma bebida.");
                 return;
+            }
+            if (delivery == null)
+            {
+                Console.WriteLine("Você precisa escolher um tipo de entrega.");
+                return;
+            
             }
             
             Console.WriteLine("Pedidio finalizado");

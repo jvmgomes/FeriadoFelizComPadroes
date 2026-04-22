@@ -7,7 +7,7 @@ namespace Cafeteria
             return 0.0;
         }
 
-        public string GetType()
+        public string GetDeliveryType()
         {
             return "Retirada no local";
         }

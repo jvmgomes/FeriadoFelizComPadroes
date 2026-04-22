@@ -9,9 +9,9 @@ namespace Cafeteria
 /// </summary>
     public class Clients : IObserver
     {
-        private string clientName;
+        private string clientName = "";
 
-        public Clients(String name)
+        public Clients(string name)
         {
             setClientName(name);
         }
