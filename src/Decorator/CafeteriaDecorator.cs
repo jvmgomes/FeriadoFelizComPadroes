@@ -2,6 +2,10 @@ using System;
 
 namespace Cafeteria
 {
+
+/// <summary>
+/// Base decorator class for extending drink functionality dynamically.
+/// </summary>
     public abstract class AdicionalDecorator : IDrinks
     {
         protected IDrinks drink;

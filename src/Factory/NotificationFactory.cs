@@ -2,6 +2,11 @@ using System;
 
 namespace Cafeteria
 {
+
+/// <summary>
+/// Factory responsible for creating notification instances
+/// based on the specified type (e.g., WhatsApp, Email).
+/// </summary>
     public class NotificationFactory
     {
         public static INotification Create(string type)

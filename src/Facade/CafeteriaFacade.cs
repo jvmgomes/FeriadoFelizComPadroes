@@ -2,6 +2,10 @@ using System;
 
 namespace Cafeteria
 {
+/// <summary>
+/// Provides a simplified interface to the cafeteria system,
+/// coordinating drink creation, delivery calculation, and order finalization.
+/// </summary>
     public class CafeteriaFacade
     {
         private IDrinks currentDrink;

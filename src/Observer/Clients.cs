@@ -2,6 +2,11 @@ using System;
 
 namespace Cafeteria
 {   
+
+/// <summary>
+/// Represents a client subscribed to cafeteria updates,
+/// receiving notifications when new ingredients are added.
+/// </summary>
     public class Clients : IObserver
     {
         private string clientName;

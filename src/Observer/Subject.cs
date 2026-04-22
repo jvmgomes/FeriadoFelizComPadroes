@@ -4,6 +4,11 @@ using System.Collections.Generic;
 
 namespace Cafeteria
 {
+    
+/// <summary>
+/// Represents the subject in the Observer pattern,
+/// responsible for managing observers and notifying them of changes.
+/// </summary>
     public class Subject
     {
         private List<IObserver> clients = new List<IObserver>();

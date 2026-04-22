@@ -2,6 +2,11 @@ using System;
 
 namespace Cafeteria
 {
+
+/// <summary>
+/// Singleton that stores global configuration of the cafeteria system,
+/// such as application settings and available ingredients.
+/// </summary>
     public class GlobalConfiguration : Subject
     {
         private static GlobalConfiguration instance;
@@ -12,8 +17,6 @@ namespace Cafeteria
         public int MaxTries { get; private set; }
         public int ClientLimitNumber { get; private set; }
         public List<string> Ingredients { get; private set; }
-        public string LastIngredientAdded { get; private set; }
-
         
         private GlobalConfiguration()
         {
@@ -37,8 +40,6 @@ namespace Cafeteria
             LastIngredientAdded = newIngredient;
             notifyClients();
         }
-
-
 
         public static GlobalConfiguration getInstance()
         {

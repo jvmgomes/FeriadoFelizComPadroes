@@ -1,18 +1,20 @@
 # ☕ Cafeteria - Sistema com Design Patterns
 ## 📌 Descrição
 
-Este projeto implementa uma simulação de um sistema de pedidos de uma cafeteria.
-O sistema recebe pedidos, permite personalização de bebidas, calcula custos e simula a entrega, além de notificar clientes sobre atualizações no estoque.
+Este projeto consiste na simulação de um sistema de pedidos de uma cafeteria, desenvolvido em C#/.NET, com foco na aplicação prática de 8 padrões de projeto (GoF) de forma integrada e coerente.
 
-O principal objetivo é aplicar 8 padrões de projeto (GoF) em uma arquitetura única, coerente e modular.
+O sistema permite:
 
-## 🎯 Objetivo
- - Simular pedidos de uma cafeteria
- - Permitir personalização de bebidas
+ - Criar bebidas
+ - Personalizar pedidos
  - Calcular entrega
- - Notificar clientes
- - Integrar com API externa
- - Utilizar múltiplos padrões de projeto
+ - Simular finalização do pedido
+ - Notificar clientes sobre atualizações
+## 🎯 Objetivo
+ - Aplicar múltiplos padrões de projeto em um único sistema
+ - Demonstrar arquitetura modular e desacoplada
+ - Simular um fluxo real de pedidos de cafeteria
+ - Consolidar conceitos de Programação Orientada a Objetos
 ## 🧩 Padrões de Projeto Utilizados
 ### **Factory**
 
@@ -32,17 +34,17 @@ Utilizado para avisar eventos como:
 
 Gerencia configurações globais da cafeteria:
 
- - nome
- - telefone
- - site
- - taxa base de entrega
+ - nome da aplicação
+ - cofigurações gerais
+ - lista de ingredientes
+ - limites do sistema
 ### **Facade**
 
 Simplifica a criação de pedidos:
 
- - combos prontos
- - escolha de ingredientes
- - interface única para o cliente
+ - criar pedidos
+ - gerenciar bebidas
+ - controlar fluxo do pedido
 ### **Observer**
 
 Clientes cadastrados recebem notificações quando:
@@ -52,7 +54,7 @@ Clientes cadastrados recebem notificações quando:
  - novo ingrediente é adicionado
 ### **Adapter**
 
-Integra o sistema com uma API externa de clientes, convertendo dados e filtrando clientes ativos (menos de 6 meses sem pedidos).
+- converter formato de dados externo → interno
 
 ### **Proxy**
 
@@ -76,6 +78,17 @@ Permite adicionar ingredientes dinamicamente às bebidas:
  - canela
  - chantili
  - calda
+
+## ▶️ Como Executar o Projeto
+### 🔹 Executar a simulação
+```
+dotnet run --project Cafeteria.App
+```
+### 🔹 Executar os testes
+```
+dotnet test
+```
+
 ## 🏗️ Arquitetura do Sistema
 ```
 Cliente
@@ -97,27 +110,31 @@ Observer (clientes recebem aviso)
 Singleton (configurações globais)
 ```
 ## 🔄 Fluxo de Execução
- - Cliente realiza pedido
- - Facade cria bebida base
- - Decorator adiciona ingredientes
- - Strategy calcula frete
- - Factory cria notificação   
- - Proxy controla envio de notificações
- - Adapter obtém clientes ativos
- - Observer notifica clientes
- - Singleton fornece configurações
+ - O cliente inicia um pedido através do Facade
+ - Uma bebida base é criada
+ - Ingredientes adicionais são aplicados via Decorator
+ - A entrega é calculada usando Strategy
+ - O Proxy controla o envio de notificações
+ - O Factory cria o tipo de notificação
+ - O Observer notifica os clientes
+ - O Singleton fornece configurações globais
+ - O Adapter integra dados externos de clientes
 ## 📂 Estrutura do Projeto
 ```
-├──src/
-│  ├── Factory/
-│  ├──Singleton/
-│  ├── Facade/
-│  ├── Observer/
-│  ├── Adapter/
-│  ├── Proxy/
-│  ├── Strategy/
-│  └── Decorator/
-└──README.md
+├── src/ 
+│   ├── Adapter/ 
+│   ├── Decorator/ 
+│   ├── Factory/ 
+│   ├── Facade/  
+│   ├── Observer/ 
+│   ├── Proxy/ 
+│   ├── Singleton/ 
+│   ├── Strategy/ 
+│
+├── Cafeteria.Tests/ 
+├── Cafeteria.App/ (Executável)
+│ 
+└── README.md
  ```
 ## 🚀 Tecnologias
  - C#
@@ -125,6 +142,7 @@ Singleton (configurações globais)
  - Programação Orientada a Objetos
  - Design Patterns (GoF)
  - Engenharia de Software Moderna (Marco Tulio Valente)
+ - xUnit (testes)
 ## 💡 Aprendizados
  - Aplicação prática de Design Patterns
  - Arquitetura modular
